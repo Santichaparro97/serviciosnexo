@@ -113,11 +113,11 @@ function renderContent() {
     </div>
 
     <div class="grid">
-      <div class="panel">
+      <div class="panel panel--benef">
         <h3>Beneficios</h3>
         ${beneficios || '<p class="ideal">—</p>'}
       </div>
-      <div class="panel">
+      <div class="panel panel--incluye">
         <h3>Qué incluye</h3>
         <ul class="list">${incluye || "<li>—</li>"}</ul>
         <h3 style="margin-top:18px">Ideal para</h3>

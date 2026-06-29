@@ -90,8 +90,8 @@ body {
   flex-wrap: wrap;
 }
 .tab {
-  border: 1px solid var(--line);
-  background: linear-gradient(rgba(8, 12, 24, 0.74), rgba(8, 12, 24, 0.74)), url("tarjeta.png") center / cover;
+  border: none;
+  background: url("bg-tab.png") center / 100% 100% no-repeat;
   color: var(--muted);
   padding: 11px 18px;
   border-radius: 12px 12px 0 0;
@@ -103,9 +103,7 @@ body {
 .tab:hover { color: var(--text); }
 .tab.active {
   color: var(--text);
-  background: linear-gradient(rgba(13, 19, 36, 0.5), rgba(13, 19, 36, 0.5)), url("tarjeta.png") center / cover;
-  border-color: var(--accent);
-  border-bottom-color: transparent;
+  box-shadow: 0 0 0 2px var(--accent-2), 0 0 14px rgba(56, 225, 176, 0.4);
 }
 .tab .ic { font-size: 16px; }
 
@@ -113,10 +111,10 @@ body {
 .content { padding: 26px; max-width: 1100px; margin: 0 auto; }
 
 .hero {
-  background: linear-gradient(rgba(10, 15, 30, 0.6), rgba(12, 18, 34, 0.6)), url("tarjeta.png") center / cover;
-  border: 1px solid var(--line);
+  background: url("bg-hero.png") center / 100% 100% no-repeat;
+  border: none;
   border-radius: var(--radius);
-  padding: 16px 18px;
+  padding: 18px 22px;
   box-shadow: var(--shadow);
   margin-bottom: 16px;
 }
@@ -135,11 +133,16 @@ body {
   .grid { grid-template-columns: 1fr; }
 }
 .panel {
-  background: linear-gradient(rgba(10, 15, 30, 0.62), rgba(12, 18, 34, 0.62)), url("tarjeta.png") center / cover;
-  border: 1px solid var(--line);
+  border: none;
   border-radius: var(--radius);
-  padding: 20px;
+  padding: 22px 24px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
 }
+.price-col { background-image: url("bg-price.png"); }
+.panel--benef { background-image: url("bg-benef.png"); }
+.panel--incluye { background-image: url("bg-incluye.png"); }
 .panel h3 {
   margin: 0 0 14px; font-size: 15px;
   text-transform: uppercase; letter-spacing: 1px; color: var(--muted);
@@ -190,8 +193,8 @@ body {
 /* Paquetes en columna vertical */
 .packs-vert { display: flex; flex-direction: column; gap: 12px; }
 .pack {
-  background: linear-gradient(rgba(9, 13, 26, 0.66), rgba(11, 16, 30, 0.66)), url("tarjeta.png") center / cover;
-  border: 1px solid var(--line);
+  background: rgba(9, 14, 28, 0.55);
+  border: 1px solid rgba(109, 139, 255, 0.25);
   border-radius: 12px;
   padding: 14px 16px;
   text-align: center;
