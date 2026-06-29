@@ -30,7 +30,7 @@ body {
   height: 100%;
   object-fit: cover;        /* llena toda la pantalla sin bordes */
   object-position: center;
-  opacity: 0.7;             /* más transparente (nivel 7/10) */
+  opacity: 1;               /* intensidades controladas dentro del SVG (texto 0.8 / fondo 0.6) */
   z-index: 0;
   pointer-events: none;
 }
