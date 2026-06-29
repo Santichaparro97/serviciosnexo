@@ -22,14 +22,14 @@ body {
   min-height: 100vh;
 }
 
-/* ---------- Fondo de video (completo sin recortar, semitransparente) ---------- */
-.bg-video {
+/* ---------- Fondo de imagen (completa, a pantalla sin bordes) ---------- */
+.bg-img {
   position: fixed;
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;      /* muestra el video entero, sin recortar */
-  opacity: 0.22;            /* semitransparente */
+  object-fit: cover;        /* llena toda la pantalla sin bordes */
+  object-position: center;
   z-index: 0;
   pointer-events: none;
 }
