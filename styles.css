@@ -188,10 +188,10 @@ body {
   margin-bottom: 16px;
 }
 
-/* Tarjetas de abajo (hero, precios, beneficios, qué incluye) un poco más anchas.
+/* Tarjetas de abajo (hero, precios, beneficios, qué incluye) más anchas.
    Solo en pantallas anchas, donde hay espacio fuera del contenedor (max 1100px). */
-@media (min-width: 1180px) {
-  .top-row, .grid { margin-left: -35px; margin-right: -35px; }
+@media (min-width: 1280px) {
+  .top-row, .grid { margin-left: -105px; margin-right: -105px; }
 }
 .top-row .hero { margin-bottom: 0; }
 .price-col { min-width: 0; }
