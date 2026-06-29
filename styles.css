@@ -91,10 +91,10 @@ body {
 }
 .tab {
   border: none;
-  background: url("bg-tab.png") center / 100% 100% no-repeat;
+  background: url("bg-tab.png?v=2") center / 100% 100% no-repeat;
   color: var(--muted);
-  padding: 11px 18px;
-  border-radius: 12px 12px 0 0;
+  padding: 12px 20px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 14px;
   display: flex; align-items: center; gap: 8px;
