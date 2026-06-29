@@ -22,6 +22,20 @@ body {
   min-height: 100vh;
 }
 
+/* ---------- Fondo de video (completo sin recortar, semitransparente) ---------- */
+.bg-video {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;      /* muestra el video entero, sin recortar */
+  opacity: 0.22;            /* semitransparente */
+  z-index: 0;
+  pointer-events: none;
+}
+/* El contenido por encima del fondo */
+.topbar, .tabs, .content, .footer { position: relative; z-index: 1; }
+
 /* ---------- Topbar ---------- */
 .topbar {
   display: flex;
