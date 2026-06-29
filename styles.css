@@ -211,6 +211,15 @@ body {
 
 @media (max-width: 820px) {
   .top-row { grid-template-columns: 1fr; }
+
+  /* Apilar todo en una columna y mandar PRECIOS al final */
+  .content { display: flex; flex-direction: column; gap: 14px; }
+  .top-row, .grid { display: contents; }
+  .hero, .panel { margin: 0; }
+  .hero { order: 1; }
+  .panel--benef { order: 2; }
+  .panel--incluye { order: 3; }
+  .price-col { order: 4; }
 }
 
 /* ---------- Modal ---------- */
